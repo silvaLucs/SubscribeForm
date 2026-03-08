@@ -74,11 +74,12 @@ aside {
         & header {
             display: flex;
             justify-content: center;
+        } 
 
-            & > img {
-            margin-bottom: 0.75rem;
         }
 
+        & .aside-container > img {
+            margin-top: 0.75rem;
         }
 
         & h2, p {
@@ -88,5 +89,4 @@ aside {
         
 
     }
-}
 }
