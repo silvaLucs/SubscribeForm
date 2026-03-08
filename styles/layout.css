@@ -54,3 +54,39 @@ aside {
 
     
 }
+ @media (width <= 60em) { 
+
+    #app{   
+     grid-template-columns: 100%;
+     grid-template-rows: auto 1fr;
+     overflow: auto;
+
+     & main {
+        overflow: visible;
+        grid-row: 2/3;
+     }
+     
+
+    & aside {
+        grid-row: 1/2;
+        padding: 1.5rem;
+
+        & header {
+            display: flex;
+            justify-content: center;
+
+            & > img {
+            margin-bottom: 0.75rem;
+        }
+
+        }
+
+        & h2, p {
+            display: none;
+        }
+
+        
+
+    }
+}
+}
